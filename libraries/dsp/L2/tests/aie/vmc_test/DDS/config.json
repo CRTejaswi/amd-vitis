@@ -1,0 +1,11 @@
+{
+    "spec": "vmc_dds.json",
+    "outdir": "./xmc_aie_lib/DDS_f7bf5f94",
+    "parameters": {
+        "data_type": "cint16",
+        "output_window_size": 32,
+        "phase_increment": 0,
+        "vmc_sample_time": -1.0
+    },
+    "updated_parameter": ""
+}

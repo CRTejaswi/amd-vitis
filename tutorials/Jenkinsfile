@@ -1,0 +1,24 @@
+@Library('pipeline-library')_
+<<<<<<< HEAD
+
+VitisLibPipeline (libname: 'Vitis-Tutorials',
+                  forcerdi:'true', devtest: 'RunDevTest.sh',
+                  additional_json:'add_tutorials.json',
+                  NEW_GENERATE:"true",
+                  allowed_modes:"sw_emu,hw_emu,hw",
+                  yml:'2023.1/tutorial.yml', tql:'2023.1/tutorial.tql',
+                  TOOLVERSION: '2023.1_daily_latest',
+                  CheckFileSystem:"false",
+                  CheckCodingStyle:"false",
+                  CheckMakefile:"false",
+                  CheckAPIJSON:"false",
+                  CheckVMC:"false",
+                  CheckParameterFileJSON:"false",
+                  CheckFileType:"true",
+                  CheckFileSize:"true",
+                  CheckVersion:"true",
+                  CheckLicense:"true"
+                  )
+=======
+FullVitisLibPipeline (branch: 'main', libname: 'Vitis_Libraries', TARGETS: 'hls_csim:hls_csynth:hls_cosim:vivado_syn:vitis_sw_emu:vitis_hw_emu:vitis_hw_build:vitis_aie_sim:vitis_aie_x86sim', TOOLVERSION: '2023.1_released')
+>>>>>>> libraries

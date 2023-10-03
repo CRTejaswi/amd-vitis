@@ -1,0 +1,670 @@
+{
+    "schema": "vitis_libraries_api_list_schema-1.0",
+    "api_list": [
+        {
+            "api_name": "us::L2::apodization_graph",
+            "spec": {
+                "schema": "vitis_libraries_api_list_schema-1.0",
+                "api_name": "us::L2::apodization_graph",
+                "display_name": "apodization_graph",
+                "brief": "",
+                "target_domain": "",
+                "header_file_name": [
+                    "apodization.hpp"
+                ],
+                "search_paths": [
+                    "L2/include"
+                ],
+                "instance": "class",
+                "parameters": [
+                    {
+                        "name": "T",
+                        "type": "typename"
+                    },
+                    {
+                        "name": "LENGTH_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "INCREMENT_VECTOR_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "INCREMENT_MATRIX_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "SPACE_DIMENSION_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "SIMD_DEPTH_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "DIM_VECTOR_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "DIM_MATRIX_",
+                        "type": "unsigned int"
+                    }
+                ],
+                "ports": [
+                    {
+                        "name": "image_points",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::apodization_graph< T, LENGTH_, INCREMENT_VECTOR_, INCREMENT_MATRIX_, SPACE_DIMENSION_, SIMD_DEPTH_, DIM_VECTOR_, DIM_MATRIX_ >::image_points"
+                    },
+                    {
+                        "name": "apodization_reference_i",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::apodization_graph< T, LENGTH_, INCREMENT_VECTOR_, INCREMENT_MATRIX_, SPACE_DIMENSION_, SIMD_DEPTH_, DIM_VECTOR_, DIM_MATRIX_ >::apodization_reference_i"
+                    },
+                    {
+                        "name": "apo_distance_k",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::apodization_graph< T, LENGTH_, INCREMENT_VECTOR_, INCREMENT_MATRIX_, SPACE_DIMENSION_, SIMD_DEPTH_, DIM_VECTOR_, DIM_MATRIX_ >::apo_distance_k"
+                    },
+                    {
+                        "name": "F_number",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::apodization_graph< T, LENGTH_, INCREMENT_VECTOR_, INCREMENT_MATRIX_, SPACE_DIMENSION_, SIMD_DEPTH_, DIM_VECTOR_, DIM_MATRIX_ >::F_number"
+                    },
+                    {
+                        "name": "apodization_output",
+                        "direction": "adf:: output",
+                        "type": "adf::port<output> us::L2::apodization_graph< T, LENGTH_, INCREMENT_VECTOR_, INCREMENT_MATRIX_, SPACE_DIMENSION_, SIMD_DEPTH_, DIM_VECTOR_, DIM_MATRIX_ >::apodization_output"
+                    }
+                ]
+            }
+        },
+        {
+            "api_name": "us::L2::apodization_sa_graph",
+            "spec": {
+                "schema": "vitis_libraries_api_list_schema-1.0",
+                "api_name": "us::L2::apodization_sa_graph",
+                "display_name": "apodization_sa_graph",
+                "brief": "",
+                "target_domain": "",
+                "header_file_name": [
+                    "apodization_sa.hpp"
+                ],
+                "search_paths": [
+                    "L2/include"
+                ],
+                "instance": "class",
+                "parameters": [
+                    {
+                        "name": "T",
+                        "type": "typename"
+                    },
+                    {
+                        "name": "LENGTH_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "INCREMENT_MATRIX_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "INCREMENT_VECTOR_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "SPACE_DIMENSION_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "SIMD_DEPTH_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "DIM_VECTOR_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "DIM_MATRIX_",
+                        "type": "unsigned int"
+                    }
+                ],
+                "ports": [
+                    {
+                        "name": "image_points",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::apodization_sa_graph< T, LENGTH_, INCREMENT_MATRIX_, INCREMENT_VECTOR_, SPACE_DIMENSION_, SIMD_DEPTH_, DIM_VECTOR_, DIM_MATRIX_ >::image_points"
+                    },
+                    {
+                        "name": "apodization_reference",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::apodization_sa_graph< T, LENGTH_, INCREMENT_MATRIX_, INCREMENT_VECTOR_, SPACE_DIMENSION_, SIMD_DEPTH_, DIM_VECTOR_, DIM_MATRIX_ >::apodization_reference"
+                    },
+                    {
+                        "name": "apo_distance_k",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::apodization_sa_graph< T, LENGTH_, INCREMENT_MATRIX_, INCREMENT_VECTOR_, SPACE_DIMENSION_, SIMD_DEPTH_, DIM_VECTOR_, DIM_MATRIX_ >::apo_distance_k"
+                    },
+                    {
+                        "name": "F_number",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::apodization_sa_graph< T, LENGTH_, INCREMENT_MATRIX_, INCREMENT_VECTOR_, SPACE_DIMENSION_, SIMD_DEPTH_, DIM_VECTOR_, DIM_MATRIX_ >::F_number"
+                    },
+                    {
+                        "name": "apodization_output",
+                        "direction": "adf:: output",
+                        "type": "adf::port<output> us::L2::apodization_sa_graph< T, LENGTH_, INCREMENT_MATRIX_, INCREMENT_VECTOR_, SPACE_DIMENSION_, SIMD_DEPTH_, DIM_VECTOR_, DIM_MATRIX_ >::apodization_output"
+                    }
+                ]
+            }
+        },
+        {
+            "api_name": "us::L2::bSpline_graph",
+            "spec": {
+                "schema": "vitis_libraries_api_list_schema-1.0",
+                "api_name": "us::L2::bSpline_graph",
+                "display_name": "bSpline_graph",
+                "brief": "",
+                "target_domain": "",
+                "header_file_name": [
+                    "bSpline.hpp"
+                ],
+                "search_paths": [
+                    "L2/include"
+                ],
+                "instance": "class",
+                "parameters": [
+                    {
+                        "name": "T",
+                        "type": "typename"
+                    },
+                    {
+                        "name": "LENGTH_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "SIMD_DEPTH_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "DIM_MATRIX_",
+                        "type": "unsigned int"
+                    }
+                ],
+                "ports": [
+                    {
+                        "name": "P1",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::bSpline_graph< T, LENGTH_, SIMD_DEPTH_, DIM_MATRIX_ >::P1"
+                    },
+                    {
+                        "name": "P2",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::bSpline_graph< T, LENGTH_, SIMD_DEPTH_, DIM_MATRIX_ >::P2"
+                    },
+                    {
+                        "name": "P3",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::bSpline_graph< T, LENGTH_, SIMD_DEPTH_, DIM_MATRIX_ >::P3"
+                    },
+                    {
+                        "name": "P4",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::bSpline_graph< T, LENGTH_, SIMD_DEPTH_, DIM_MATRIX_ >::P4"
+                    },
+                    {
+                        "name": "P5",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::bSpline_graph< T, LENGTH_, SIMD_DEPTH_, DIM_MATRIX_ >::P5"
+                    },
+                    {
+                        "name": "P6",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::bSpline_graph< T, LENGTH_, SIMD_DEPTH_, DIM_MATRIX_ >::P6"
+                    },
+                    {
+                        "name": "C",
+                        "direction": "adf:: output",
+                        "type": "adf::port<output> us::L2::bSpline_graph< T, LENGTH_, SIMD_DEPTH_, DIM_MATRIX_ >::C"
+                    }
+                ]
+            }
+        },
+        {
+            "api_name": "us::L2::delay_graph",
+            "spec": {
+                "schema": "vitis_libraries_api_list_schema-1.0",
+                "api_name": "us::L2::delay_graph",
+                "display_name": "delay_graph",
+                "brief": "",
+                "target_domain": "",
+                "header_file_name": [
+                    "delay.hpp"
+                ],
+                "search_paths": [
+                    "L2/include"
+                ],
+                "instance": "class",
+                "parameters": [
+                    {
+                        "name": "T",
+                        "type": "typename"
+                    },
+                    {
+                        "name": "LENGTH_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "INCREMENT_VECTOR_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "INCREMENT_MATRIX_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "SIMD_DEPTH_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "SPACE_DIMENSION_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "DIM_VECTOR_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "DIM_MATRIX_",
+                        "type": "unsigned int"
+                    }
+                ],
+                "ports": [
+                    {
+                        "name": "image_points_from_PL",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::delay_graph< T, LENGTH_, INCREMENT_VECTOR_, INCREMENT_MATRIX_, SIMD_DEPTH_, SPACE_DIMENSION_, DIM_VECTOR_, DIM_MATRIX_ >::image_points_from_PL"
+                    },
+                    {
+                        "name": "image_points_from_PL_",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::delay_graph< T, LENGTH_, INCREMENT_VECTOR_, INCREMENT_MATRIX_, SIMD_DEPTH_, SPACE_DIMENSION_, DIM_VECTOR_, DIM_MATRIX_ >::image_points_from_PL_"
+                    },
+                    {
+                        "name": "tx_def_ref_point",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::delay_graph< T, LENGTH_, INCREMENT_VECTOR_, INCREMENT_MATRIX_, SIMD_DEPTH_, SPACE_DIMENSION_, DIM_VECTOR_, DIM_MATRIX_ >::tx_def_ref_point"
+                    },
+                    {
+                        "name": "tx_def_delay_distance",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::delay_graph< T, LENGTH_, INCREMENT_VECTOR_, INCREMENT_MATRIX_, SIMD_DEPTH_, SPACE_DIMENSION_, DIM_VECTOR_, DIM_MATRIX_ >::tx_def_delay_distance"
+                    },
+                    {
+                        "name": "tx_def_delay_distance2",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::delay_graph< T, LENGTH_, INCREMENT_VECTOR_, INCREMENT_MATRIX_, SIMD_DEPTH_, SPACE_DIMENSION_, DIM_VECTOR_, DIM_MATRIX_ >::tx_def_delay_distance2"
+                    },
+                    {
+                        "name": "tx_def_focal_point",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::delay_graph< T, LENGTH_, INCREMENT_VECTOR_, INCREMENT_MATRIX_, SIMD_DEPTH_, SPACE_DIMENSION_, DIM_VECTOR_, DIM_MATRIX_ >::tx_def_focal_point"
+                    },
+                    {
+                        "name": "t_start",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::delay_graph< T, LENGTH_, INCREMENT_VECTOR_, INCREMENT_MATRIX_, SIMD_DEPTH_, SPACE_DIMENSION_, DIM_VECTOR_, DIM_MATRIX_ >::t_start"
+                    },
+                    {
+                        "name": "delay_to_PL",
+                        "direction": "adf:: output",
+                        "type": "adf::port<output> us::L2::delay_graph< T, LENGTH_, INCREMENT_VECTOR_, INCREMENT_MATRIX_, SIMD_DEPTH_, SPACE_DIMENSION_, DIM_VECTOR_, DIM_MATRIX_ >::delay_to_PL"
+                    }
+                ]
+            }
+        },
+        {
+            "api_name": "us::L2::delay_pw_graph",
+            "spec": {
+                "schema": "vitis_libraries_api_list_schema-1.0",
+                "api_name": "us::L2::delay_pw_graph",
+                "display_name": "delay_pw_graph",
+                "brief": "",
+                "target_domain": "",
+                "header_file_name": [
+                    "delay_pw.hpp"
+                ],
+                "search_paths": [
+                    "L2/include"
+                ],
+                "instance": "class",
+                "parameters": [
+                    {
+                        "name": "T",
+                        "type": "typename"
+                    },
+                    {
+                        "name": "LENGTH_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "INCREMENT_VECTOR_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "INCREMENT_MATRIX_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "SIMD_DEPTH_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "SPACE_DIMENSION_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "DIM_VECTOR_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "DIM_MATRIX_",
+                        "type": "unsigned int"
+                    }
+                ],
+                "ports": [
+                    {
+                        "name": "image_points_from_PL",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::delay_pw_graph< T, LENGTH_, INCREMENT_VECTOR_, INCREMENT_MATRIX_, SIMD_DEPTH_, SPACE_DIMENSION_, DIM_VECTOR_, DIM_MATRIX_ >::image_points_from_PL"
+                    },
+                    {
+                        "name": "tx_def_reference_point",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::delay_pw_graph< T, LENGTH_, INCREMENT_VECTOR_, INCREMENT_MATRIX_, SIMD_DEPTH_, SPACE_DIMENSION_, DIM_VECTOR_, DIM_MATRIX_ >::tx_def_reference_point"
+                    },
+                    {
+                        "name": "t_start",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::delay_pw_graph< T, LENGTH_, INCREMENT_VECTOR_, INCREMENT_MATRIX_, SIMD_DEPTH_, SPACE_DIMENSION_, DIM_VECTOR_, DIM_MATRIX_ >::t_start"
+                    },
+                    {
+                        "name": "delay_to_PL",
+                        "direction": "adf:: output",
+                        "type": "adf::port<output> us::L2::delay_pw_graph< T, LENGTH_, INCREMENT_VECTOR_, INCREMENT_MATRIX_, SIMD_DEPTH_, SPACE_DIMENSION_, DIM_VECTOR_, DIM_MATRIX_ >::delay_to_PL"
+                    }
+                ]
+            }
+        },
+        {
+            "api_name": "us::L2::focusing_graph",
+            "spec": {
+                "schema": "vitis_libraries_api_list_schema-1.0",
+                "api_name": "us::L2::focusing_graph",
+                "display_name": "focusing_graph",
+                "brief": "",
+                "target_domain": "",
+                "header_file_name": [
+                    "focusing.hpp"
+                ],
+                "search_paths": [
+                    "L2/include"
+                ],
+                "instance": "class",
+                "parameters": [
+                    {
+                        "name": "T",
+                        "type": "typename"
+                    },
+                    {
+                        "name": "LENGTH_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "INCREMENT_VECTOR_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "SIMD_DEPTH_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "DIM_VECTOR_",
+                        "type": "unsigned int"
+                    }
+                ],
+                "ports": [
+                    {
+                        "name": "apo_ref_0",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::focusing_graph< T, LENGTH_, INCREMENT_VECTOR_, SIMD_DEPTH_, DIM_VECTOR_ >::apo_ref_0"
+                    },
+                    {
+                        "name": "xdc_def_0",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::focusing_graph< T, LENGTH_, INCREMENT_VECTOR_, SIMD_DEPTH_, DIM_VECTOR_ >::xdc_def_0"
+                    },
+                    {
+                        "name": "apo_ref_1",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::focusing_graph< T, LENGTH_, INCREMENT_VECTOR_, SIMD_DEPTH_, DIM_VECTOR_ >::apo_ref_1"
+                    },
+                    {
+                        "name": "xdc_def_1",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::focusing_graph< T, LENGTH_, INCREMENT_VECTOR_, SIMD_DEPTH_, DIM_VECTOR_ >::xdc_def_1"
+                    },
+                    {
+                        "name": "focusing_output",
+                        "direction": "adf:: output",
+                        "type": "adf::port<output> us::L2::focusing_graph< T, LENGTH_, INCREMENT_VECTOR_, SIMD_DEPTH_, DIM_VECTOR_ >::focusing_output"
+                    }
+                ]
+            }
+        },
+        {
+            "api_name": "us::L2::focusing_sa_graph",
+            "spec": {
+                "schema": "vitis_libraries_api_list_schema-1.0",
+                "api_name": "us::L2::focusing_sa_graph",
+                "display_name": "focusing_sa_graph",
+                "brief": "",
+                "target_domain": "",
+                "header_file_name": [
+                    "focusing_sa.hpp"
+                ],
+                "search_paths": [
+                    "L2/include"
+                ],
+                "instance": "class",
+                "parameters": [
+                    {
+                        "name": "T",
+                        "type": "typename"
+                    },
+                    {
+                        "name": "LENGTH_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "INCREMENT_VECTOR_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "SIMD_DEPTH_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "DIM_VECTOR_",
+                        "type": "unsigned int"
+                    }
+                ],
+                "ports": [
+                    {
+                        "name": "apo_ref_0",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::focusing_sa_graph< T, LENGTH_, INCREMENT_VECTOR_, SIMD_DEPTH_, DIM_VECTOR_ >::apo_ref_0"
+                    },
+                    {
+                        "name": "img_points_0",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::focusing_sa_graph< T, LENGTH_, INCREMENT_VECTOR_, SIMD_DEPTH_, DIM_VECTOR_ >::img_points_0"
+                    },
+                    {
+                        "name": "apo_ref_1",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::focusing_sa_graph< T, LENGTH_, INCREMENT_VECTOR_, SIMD_DEPTH_, DIM_VECTOR_ >::apo_ref_1"
+                    },
+                    {
+                        "name": "img_points_1",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::focusing_sa_graph< T, LENGTH_, INCREMENT_VECTOR_, SIMD_DEPTH_, DIM_VECTOR_ >::img_points_1"
+                    },
+                    {
+                        "name": "focusing_output",
+                        "direction": "adf:: output",
+                        "type": "adf::port<output> us::L2::focusing_sa_graph< T, LENGTH_, INCREMENT_VECTOR_, SIMD_DEPTH_, DIM_VECTOR_ >::focusing_output"
+                    }
+                ]
+            }
+        },
+        {
+            "api_name": "us::L2::imagePoints_graph",
+            "spec": {
+                "schema": "vitis_libraries_api_list_schema-1.0",
+                "api_name": "us::L2::imagePoints_graph",
+                "display_name": "imagePoints_graph",
+                "brief": "",
+                "target_domain": "",
+                "header_file_name": [
+                    "imagePoints.hpp"
+                ],
+                "search_paths": [
+                    "L2/include"
+                ],
+                "instance": "class",
+                "parameters": [
+                    {
+                        "name": "T",
+                        "type": "typename"
+                    },
+                    {
+                        "name": "LENGTH_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "SPACE_DIMENSION_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "INCREMENT_MATRIX_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "SIMD_DEPTH_",
+                        "type": "unsigned int"
+                    }
+                ],
+                "ports": [
+                    {
+                        "name": "start_positions",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::imagePoints_graph< T, LENGTH_, SPACE_DIMENSION_, INCREMENT_MATRIX_, SIMD_DEPTH_ >::start_positions"
+                    },
+                    {
+                        "name": "directions",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::imagePoints_graph< T, LENGTH_, SPACE_DIMENSION_, INCREMENT_MATRIX_, SIMD_DEPTH_ >::directions"
+                    },
+                    {
+                        "name": "samples_arange",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::imagePoints_graph< T, LENGTH_, SPACE_DIMENSION_, INCREMENT_MATRIX_, SIMD_DEPTH_ >::samples_arange"
+                    },
+                    {
+                        "name": "image_points",
+                        "direction": "adf:: output",
+                        "type": "adf::port<output> us::L2::imagePoints_graph< T, LENGTH_, SPACE_DIMENSION_, INCREMENT_MATRIX_, SIMD_DEPTH_ >::image_points"
+                    }
+                ]
+            }
+        },
+        {
+            "api_name": "us::L2::samples_graph",
+            "spec": {
+                "schema": "vitis_libraries_api_list_schema-1.0",
+                "api_name": "us::L2::samples_graph",
+                "display_name": "samples_graph",
+                "brief": "",
+                "target_domain": "",
+                "header_file_name": [
+                    "samples.hpp"
+                ],
+                "search_paths": [
+                    "L2/include"
+                ],
+                "instance": "class",
+                "parameters": [
+                    {
+                        "name": "T",
+                        "type": "typename"
+                    },
+                    {
+                        "name": "LENGTH_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "SPACE_DIMENSION_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "INCREMENT_VECTOR_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "INCREMENT_MATRIX_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "SIMD_DEPTH_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "DIM_VECTOR_",
+                        "type": "unsigned int"
+                    },
+                    {
+                        "name": "DIM_MATRIX_",
+                        "type": "unsigned int"
+                    }
+                ],
+                "ports": [
+                    {
+                        "name": "image_points_from_PL",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::samples_graph< T, LENGTH_, SPACE_DIMENSION_, INCREMENT_VECTOR_, INCREMENT_MATRIX_, SIMD_DEPTH_, DIM_VECTOR_, DIM_MATRIX_ >::image_points_from_PL"
+                    },
+                    {
+                        "name": "delay_from_PL",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::samples_graph< T, LENGTH_, SPACE_DIMENSION_, INCREMENT_VECTOR_, INCREMENT_MATRIX_, SIMD_DEPTH_, DIM_VECTOR_, DIM_MATRIX_ >::delay_from_PL"
+                    },
+                    {
+                        "name": "xdc_def_positions",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::samples_graph< T, LENGTH_, SPACE_DIMENSION_, INCREMENT_VECTOR_, INCREMENT_MATRIX_, SIMD_DEPTH_, DIM_VECTOR_, DIM_MATRIX_ >::xdc_def_positions"
+                    },
+                    {
+                        "name": "sampling_frequency",
+                        "direction": "adf:: input",
+                        "type": "adf::port<input> us::L2::samples_graph< T, LENGTH_, SPACE_DIMENSION_, INCREMENT_VECTOR_, INCREMENT_MATRIX_, SIMD_DEPTH_, DIM_VECTOR_, DIM_MATRIX_ >::sampling_frequency"
+                    },
+                    {
+                        "name": "samples_to_PL",
+                        "direction": "adf:: output",
+                        "type": "adf::port<output> us::L2::samples_graph< T, LENGTH_, SPACE_DIMENSION_, INCREMENT_VECTOR_, INCREMENT_MATRIX_, SIMD_DEPTH_, DIM_VECTOR_, DIM_MATRIX_ >::samples_to_PL"
+                    }
+                ]
+            }
+        }
+    ]
+}

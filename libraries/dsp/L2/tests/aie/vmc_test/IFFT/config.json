@@ -1,0 +1,12 @@
+{
+    "spec": "vmc_ifft.json",
+    "outdir": "./xmc_aie_lib/IFFT_f369cd05",
+    "parameters": {
+        "data_type": "cint16",
+        "point_size": 64,
+        "input_window_size": 64,
+        "shift_val": 0,
+        "casc_length": 1
+    },
+    "updated_parameter": ""
+}
